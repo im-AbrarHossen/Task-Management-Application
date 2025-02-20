@@ -3,6 +3,7 @@ import Home from "../src/pages/Home";
 import Login from "../src/Authentications/Login";
 import Register from "../src/Authentications/Register";
 import ErrorPage from "../src/pages/ErrorPage";
+import TaskBoard from "../src/components/TaskBoard";
 
 const router = createBrowserRouter([
     {
@@ -16,6 +17,10 @@ const router = createBrowserRouter([
     {
         path: "/auth/register",
         element: <Register></Register>,
+    },
+    {
+        path: "/taskboard",
+        element: <TaskBoard></TaskBoard>,
     },
     {
         path: "*",
